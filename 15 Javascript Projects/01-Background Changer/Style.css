@@ -1,0 +1,102 @@
+:root{
+    --letter-spacing:2px;
+    --border-radius:10px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 8vh;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.952);
+    z-index: 9999;
+}
+
+.logo,.simple-hex{
+    height: 100%;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    justify-content: flex-start;
+    color: rgb(226, 43, 202);
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: var(--letter-spacing);
+}
+
+.simple-hex{
+    justify-content: space-around;
+}
+
+.nav-btn{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: var(--letter-spacing);
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    color:rgb(226, 43, 202);
+    transition: 0.1s;
+}
+
+main{
+    background-color: #f1f5f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 92vh;
+}
+
+.text-container{
+    background-color: rgba(0, 0, 0, 0.838);
+    color: white;
+    width: 90vw;
+    max-width: 600px;
+    min-height: 70px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+    letter-spacing: var(--letter-spacing);
+    font-size: 20px;
+}
+
+.btn{
+    background: transparent;
+    outline: none;
+    margin-top: 2rem;
+    height: 3rem;
+    width: 9rem;
+    letter-spacing: var(--letter-spacing);
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0px 0px 2px black; 
+    cursor: pointer;
+    border:1px solid black;
+}
+
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.838);
+    color:white;
+    transition: 0.7s;
+}
